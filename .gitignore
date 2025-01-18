@@ -1,0 +1,41 @@
+# Global ignores for the monorepo
+.DS_Store
+node_modules/
+*.log
+.env
+.vscode/
+.idea/
+*.swp
+
+# Ignore build and output directories
+dist/
+build/
+coverage/
+tmp/
+out/
+
+# Specific to frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.next/          # For Next.js
+frontend/.nuxt/          # For Nuxt.js
+frontend/public/build/   # Example for build output
+
+# Specific to backend
+backend/node_modules/
+backend/logs/
+backend/.env
+backend/dist/
+backend/tmp/
+backend/database.sqlite  # If using SQLite locally
+backend/debug.log
+
+# Ignore lockfiles if not universally used
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore Docker-related files (if applicable)
+docker-compose.override.yml
+.docker/
+
